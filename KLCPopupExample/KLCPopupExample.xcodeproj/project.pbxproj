@@ -21,7 +21,7 @@
 		1FA76AD6195893080075A8E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA76AB5195893080075A8E4 /* UIKit.framework */; };
 		1FA76ADE195893080075A8E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA76ADC195893080075A8E4 /* InfoPlist.strings */; };
 		1FA76AE0195893080075A8E4 /* KLCPopupExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76ADF195893080075A8E4 /* KLCPopupExampleTests.m */; };
-		1FA76AF01958A2130075A8E4 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA76AEF1958A2130075A8E4 /* KLCPopup.m */; };
+		228581502331FFFD00EF44E6 /* KLCPopup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228581492331FEE300EF44E6 /* KLCPopup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +31,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1FA76AAD195893080075A8E4;
 			remoteInfo = KLCPopupExample;
+		};
+		228581482331FEE300EF44E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 228581442331FEE200EF44E6 /* KLCPopup.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 228581392331FEE200EF44E6;
+			remoteInfo = KLCPopup;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,8 +61,7 @@
 		1FA76ADB195893080075A8E4 /* KLCPopupExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KLCPopupExampleTests-Info.plist"; sourceTree = "<group>"; };
 		1FA76ADD195893080075A8E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FA76ADF195893080075A8E4 /* KLCPopupExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLCPopupExampleTests.m; sourceTree = "<group>"; };
-		1FA76AEE1958A2130075A8E4 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
-		1FA76AEF1958A2130075A8E4 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
+		228581442331FEE200EF44E6 /* KLCPopup.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KLCPopup.xcodeproj; path = KLCPopup/KLCPopup.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,7 @@
 				1FA76AB4195893080075A8E4 /* CoreGraphics.framework in Frameworks */,
 				1FA76AB6195893080075A8E4 /* UIKit.framework in Frameworks */,
 				1FA76AB2195893080075A8E4 /* Foundation.framework in Frameworks */,
+				228581502331FFFD00EF44E6 /* KLCPopup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,11 +167,18 @@
 		1FA76AED1958A2130075A8E4 /* KLCPopup */ = {
 			isa = PBXGroup;
 			children = (
-				1FA76AEE1958A2130075A8E4 /* KLCPopup.h */,
-				1FA76AEF1958A2130075A8E4 /* KLCPopup.m */,
+				228581442331FEE200EF44E6 /* KLCPopup.xcodeproj */,
 			);
 			name = KLCPopup;
 			path = ../KLCPopup;
+			sourceTree = "<group>";
+		};
+		228581452331FEE200EF44E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				228581492331FEE300EF44E6 /* KLCPopup.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +239,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 1FA76AA5195893080075A8E4;
 			productRefGroup = 1FA76AAF195893080075A8E4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 228581452331FEE200EF44E6 /* Products */;
+					ProjectRef = 228581442331FEE200EF44E6 /* KLCPopup.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1FA76AAD195893080075A8E4 /* KLCPopupExample */,
@@ -238,6 +259,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		228581492331FEE300EF44E6 /* KLCPopup.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = KLCPopup.framework;
+			remoteRef = 228581482331FEE300EF44E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1FA76AAC195893080075A8E4 /* Resources */ = {
@@ -267,7 +298,6 @@
 				1FA76ACB195893080075A8E4 /* ViewController.m in Sources */,
 				1FA76ABE195893080075A8E4 /* main.m in Sources */,
 				1FA76AC2195893080075A8E4 /* AppDelegate.m in Sources */,
-				1FA76AF01958A2130075A8E4 /* KLCPopup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -23,7 +23,7 @@
 // THE SOFTWARE.
 
 #import "ViewController.h"
-#import "KLCPopup.h"
+#import <KLCPopup/KLCPopup.h>
 #import <QuartzCore/QuartzCore.h>
 
 
